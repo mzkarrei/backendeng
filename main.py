@@ -6,8 +6,8 @@ import json
     Load the main functions and the model functions
 """
 
-from src.functions import load_genotypes
-from src.model import run
+from src.functions.functions import load_genotypes
+from src.model.model import run
 
 
 CONFIG_FILE = "config.json"
