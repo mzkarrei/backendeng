@@ -1,0 +1,11 @@
+plot_id,genotype_id,trait,value
+P0201,G001,yield,5.30
+P0201,G001,height,180
+P0202,G007,yield,5.60
+P0202,G007,height,185
+P0203,G009,yield,4.95
+P0203,G009,height,176
+P0204,G002,yield,4.60
+P0204,G002,height,169
+P0205,G005,yield,5.88
+P0205,G005,height,187
