@@ -24,3 +24,18 @@ static const double W_SNP4 = 0.15;
 double genomic_score(double snp1, double snp2, double snp3, double snp4) {
     return snp1 * W_SNP1 + snp2 * W_SNP2 + snp3 * W_SNP3 + snp4 * W_SNP4;
 }
+
+
+#include <pybind11/pybind11.h>
+PYBIND11_MODULE(scoring, m) {
+    m.doc() = "Genomic scoring (C++ implementation)";
+    m.def(
+        "genomic_score",
+        &genomic_score,
+        "Weighted sum of SNP1..SNP4 marker dosages",
+        pybind11::arg("snp1"),
+        pybind11::arg("snp2"),
+        pybind11::arg("snp3"),
+        pybind11::arg("snp4")
+    );
+}
