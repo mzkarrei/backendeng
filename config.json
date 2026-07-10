@@ -1,0 +1,5 @@
+{
+    "PHENOTYPES_DIR": "data/phenotypes/",
+    "GENOTYPE_DIR": "data/genotypes/",
+    "OUTPUT_DIR": "data/results/"
+}
