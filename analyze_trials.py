@@ -33,6 +33,17 @@ def score(markers):
     # hooked up yet.
     return markers[0]*W["SNP1"] + markers[1]*W["SNP2"] + markers[2]*W["SNP3"] + markers[3]*W["SNP4"]
 
+def validate_phenotype_row(row):
+    """
+        Test function to validate phenotypes csv and assure columns are valid to run this program
+    """
+    if row[0] == '' or row[1] == '' or row[2] == '':
+        return False
+    try:
+        float(row[3])
+    except (ValueError, TypeError):
+        return False
+    return True
 
 def main():
     genos = load_genotypes()
@@ -51,6 +62,10 @@ def main():
     by_geno = {}
     for r in all_rows:
         # plot_id, genotype_id, trait, value
+
+        if not validate_phenotype_row(r): # Skip invalid row
+            continue
+
         gid = r[1]
         if gid not in by_geno:
             by_geno[gid] = {}
