@@ -1,5 +1,5 @@
 {
-    "PHENOTYPES_DIR": "data/phenotypes/",
-    "GENOTYPE_DIR": "data/genotypes/",
-    "OUTPUT_DIR": "data/results/"
+    "PHENOTYPES_DIR": "data/phenotypes_prod/",
+    "GENOTYPES_FILE": "data/genotypes/markers.csv",
+    "OUTPUT_DIR": "output/"
 }

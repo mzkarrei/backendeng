@@ -1,0 +1,7 @@
+plot_id,site,genotype_id,trait,value
+P0003,site_north_2024,G003,yield,6.10
+P0003,site_north_2024,G003,height,190
+P0101,site_south_2024,G003,yield,6.35
+P0101,site_south_2024,G003,height,193
+P0108,site_south_2024,G003,yield,6.20
+P0108,site_south_2024,G003,height,not_recorded

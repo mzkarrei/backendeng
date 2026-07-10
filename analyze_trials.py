@@ -76,11 +76,12 @@ def main():
 
     # compute per-genotype summary + genomic score
     results = []
+    
     for gid in by_geno:
 
         if gid not in genos:
             continue
-
+        print(genos[gid])
         yield_vals = by_geno[gid]["yield"]
         height_vals = by_geno[gid]["height"]
         gval = score(genos[gid])
