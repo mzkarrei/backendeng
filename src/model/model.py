@@ -3,7 +3,8 @@ import statistics
 from src.model import scoring
 
 # marker weights we settled on last season (don't change these)
-W = {"SNP1": 0.4, "SNP2": 0.1, "SNP3": 0.35, "SNP4": 0.15}
+W = {"SNP1": 0.4, "SNP2": 0.1, "SNP3": 0.35, "SNP4": 0.15} 
+# In production environment, these params above should be set in a database or model parametrization (apparently changes per season)
 
 
 def score(markers):
